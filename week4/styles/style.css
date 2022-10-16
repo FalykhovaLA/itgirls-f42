@@ -1,0 +1,57 @@
+.container{
+    background-image:url(/week4/images/dog.png);
+    background-repeat:no-repeat ;
+    width: 3000px;
+    height: 1000px;
+}
+header{
+    display: flex;
+} 
+.menu ul li a{
+margin: 0;
+padding: 0;
+margin-top: 45px;
+color: #FFFF;;
+font-family: 'Courier New', Courier, monospace, sans-serif ;
+padding: 15px 30px 15px;
+font-size: 14pt;
+text-decoration: none;
+}
+.menu a:hover{
+    color:rebeccapurple;
+}
+h1{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 54px;
+    color: blanchedalmond;
+}
+h2{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+button{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 13px 42px;
+width: 226.93px;
+height: 48px;
+left: 120px;
+top: 527px;
+border: #961914;
+background: #961914;
+border-radius: 8px ;
+}
+button a{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;   
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
