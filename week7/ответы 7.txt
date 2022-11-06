@@ -1,0 +1,47 @@
+1. Как сделать так, чтобы при просмотре на телефоне текст стал читаемым, а картинка - большой? 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+2. В чём разница между отзывчивым и адаптивным веб-дизайном?
+ отзывчивый дизайн — один макет для всех устройств, адаптивный дизайн — один макет для каждого вида устройства.
+
+3. Какие величины лучше использовать для шрифтов в гибком дизайне?
+em, vw
+
+4. Какой вид верстки использован на этой картинке? К какой категории шаблонов он относится?
+адаптивная Layout Shifter
+
+5. Как задать стили для экранов шириной от 800 до 1200 пикселей? 
+@media (min-width: 800px) and (max-width: 1200px) {
+
+6. Приведите минимум 2 примера как подключать медиазапросы? 
+<link rel="stylesheet" media="screen and (color)" href="example.css">
+<style>
+@media (max-width: 600px) {
+  #sidebar {display: none;}
+}
+</style>
+
+7. Как можно задавать гибкие изображения?
+img {max-width: 100%;}
+
+8. Как задать стили только для `landscape` поворота экрана? И что вообще такое `landscape` и чем он отличается от `portrait`?
+/* landscape (альбомный) - это режим, в котором наоборот ширина viewport больше её высоты */
+@media (orientation: landscape) { 
+  #background-image { background: url(image1.png) no-repeat; }
+}
+
+/* portrait (портретный) - это режим, в котором высота viewport больше ширины */
+@media (orientation: portrait) { 
+  #background-image { background: url(image2.png) no-repeat; }
+}  
+
+9. Назовите минимум 3 способа как можно тестировать, как выглядит сайт при разных размерах экранов?
+Chrome dev tools
+http://mattkersley.com/responsive/
+
+10. Самостоятельно изучите, как можно подключить несколько картинок разных размеров через один тег `<img>`?
+есть два атрибута — srcset and sizes — позволяющих добавить дополнительные изображения с пометками, чтобы браузер выбрал подходящее
+<img srcset="elva-fairy-320w.jpg 320w, elva-fairy-480w.jpg 480w, elva-fairy-800w.jpg 800w"sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
+
+
+

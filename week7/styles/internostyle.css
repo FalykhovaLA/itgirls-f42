@@ -1,0 +1,164 @@
+.header{
+    display: inline-flex;
+}
+.main{
+    background-image:url(week7\assets\images\room.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.header img{
+    margin: 35px 20px 20px 50px;
+    width:130px ;height:30px;
+
+}
+.nav li{
+    display:inline-block;
+    list-style-type: none;
+    /*border: 1px solid rgb(246, 98, 0);*/
+    margin: 0 10px;
+    padding: 10px;
+    
+}
+.nav {
+    margin-left: 20%;
+    margin-top: 15px;
+}
+.nav li a{
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    letter-spacing: 0.4px;
+
+    color: #292F36;
+}
+.nav li a :hover{
+    color: #CDA274 ;
+}
+.nav li a:active{
+    color:#CDA274;
+    transition: all 0.5s ease;
+}
+.nav li a:focus{
+    color:#CDA274;
+    transition: all 0.5s ease;
+}
+.main h1{
+    position:relative;
+    margin: 188px 20px 0 120px;
+
+    font-family: 'DM Serif Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+/* or 120% */
+
+    letter-spacing: 0.22px;
+
+    color: #292F36;
+}
+.main h2{
+    position: relative;
+    margin: 30px 20px 0 120px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+/* identical to box height, or 150% */
+    letter-spacing: 0.22px;
+    color: #4D5053;
+}
+.main span a{
+    text-decoration: none;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+/* identical to box height, or 150% */
+
+    letter-spacing: 0.72px;
+
+    color: #FFFFFF;
+}
+.form{
+    position: relative;
+    margin: 70px 20px 0 120px;
+}
+.form span a{
+    box-sizing: border-box;
+
+    position: relative;
+    padding: 10px 15px 10px 15px;
+
+    background: #292F36;
+    border: 2px solid #292F36;
+    border-radius: 18px;
+}
+.footer p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+/* identical to box height, or 150% */
+
+    letter-spacing: 0.22px;
+
+    color: #4D5053;
+}
+.pip.dis{
+    font-family: 'DM Serif Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+/* identical to box height, or 150% */
+
+    letter-spacing: 0.22px;
+
+    color: #292F36;
+}
+@media screen and (min-width: 1024px){
+    .footer{
+        display: grid;
+        align-items: stretch;
+        grid-template-columns: 1fr 20% 20% 1fr;
+        grid-template-rows: 1fr ;
+        align-items: center;
+        gap: 5px;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: 20% 1fr 10%;
+        height: 130vh;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .footer{
+        display: none;
+        
+    }
+    .container{
+        display: grid;
+        grid-template-rows: 20% 1fr 10%;
+        height: 130vh;
+    }
+}
+@media screen and (max-width: 767px){
+    .footer{
+        display: none;
+    }
+}
