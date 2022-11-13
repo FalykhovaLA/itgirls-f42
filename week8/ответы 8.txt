@@ -1,0 +1,58 @@
+1. Какие основные преимущества Bootstrap?
+2. Как сделать желтую кнопку с помощью Bootstrap? 
+3. Каким кодом можно сделать такую сетку?
+4. Каким компонентом Bootstrap можно задать такой элемент?
+5. Как убрать поля между колонками?
+6. Как сделать навигацию на Bootstrap?
+7. Что такое колонка **auto-layout ?**
+8. Как сделать центрирование содержимого по горизонтали? А по вертикали? 
+9. Как задать адаптивность для колонки шириной в 50%, чтобы при ширине экрана меньше 768px она становилась шириной на весь экран?
+10. Что произойдет, если колонок станет больше 12?
+11. Как задать иконку инстаграм через font awasome?
+12. Чем отличается container от container-fluid?
+
+1.высокая скорость создания качественной адаптивной вёрстки 
+  кроссбраузерность и кроссплатформеннось
+  наличие большого количество готовых хорошо продуманных компонентов
+  наличие хорошо продуманного дизайна компонентов и согласованности
+2.<button type="button" class="btn btn-warning">Предупреждение</button>
+3.
+4.<div class="row">
+	<div class="col-3">25%</div>
+</div>
+5.<div class="row no-gutters">
+	<div class="col-6 col-sm-4 col-md-4"><div>col-6 col-sm-4 col-md-4</div></div>
+	<div class="col-6 col-sm-4 col-md-4"><div>col-6 col-sm-4 col-md-4</div></div>
+	<div class="col-6 col-sm-4 col-md-4"><div>col-6 col-sm-4 col-md-4</div></div>
+	<div class="col-6 col-sm-4 col-md-4"><div>col-6 col-sm-4 col-md-4</div></div>
+	<div class="col-6 col-sm-4 col-md-4"><div>col-6 col-sm-4 col-md-4</div></div>
+	<div class="col-6 col-sm-4 col-md-4"><div>col-6 col-sm-4 col-md-4</div></div>
+	<div class="col-6 col-sm-4 col-md-4"><div>col-6 col-sm-4 col-md-4</div></div>
+	<div class="col-6 col-sm-4 col-md-4"><div>col-6 col-sm-4 col-md-4</div></div>
+	<div class="col-6 col-sm-4 col-md-4"><div>col-6 col-sm-4 col-md-4</div></div>
+</div>
+6.- `.navbar-brand` для названия вашей компании, продукта или имени проекта
+- `.navbar-nav` для навигации полной высоты (включая выпадающие элементы)
+- `.form-inline` для любых органов контроля форм и действий с ними
+- `.navbar-text` для добавления вертикально центрированных строк текста и пр.
+7. Auto-layout колонки идеальны для любых сценариев шаблонов, где необходима одинаковая ширина колонок. 
+8.<div class="row align-items-start">
+	<div class="col">Верх</div>
+	<div class="col">Верх</div>
+	<div class="col">Верх</div>
+</div>
+веритикальное
+<div class="row justify-content-start">
+	<div class="col-4">row justify-content-start</div>
+	<div class="col-4">row justify-content-start</div>
+</div>горизонтальное
+9.<div class="container"> 
+   <div class="row"> 
+      <div class="col-md-6">Column 1</div>
+</div>
+10.auto-layout колонки.Колонки в одной строке располагаются вдоль горизонтально, а затем встают вертикально 
+Это вертикальное сталкивание или “обертывание”, происходит когда элементы колонок в одном ряду превышают количество двенадцати
+11.<i class="fa fa-camera-retro"></i> fa-camera-retro
+12.container - это базовый блок с фиксированной шириной контента с внутренними отступами по бокам для внутренних колонок.
+ container-fluid - это базовый блок со 100% шириной контента с внутренними отступами по бокам для внутренних колонок.
+ Они одинаковые по свойствам только первому ширина задана, а второму нет

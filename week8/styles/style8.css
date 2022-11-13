@@ -1,0 +1,44 @@
+.header{
+    background-color: rgb(38, 36, 36);
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    max-width: 1024px;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.logon{
+    font-size: larger;
+    color: aliceblue;
+    font-family:'Montserrat'sans-serif;
+    font-weight: 400;
+}
+.topnav__link{
+    color: aliceblue;
+    padding: 0 15px;
+    font-family:'Montserrat'sans-serif;
+    font-weight: 400;
+}
+.topnav__link:hover{
+    text-decoration: none;
+    color: rgb(199, 52, 76);
+    font-size: large;
+}
+.col{
+    background-color: rgb(232, 236, 236);
+}
+.modal-content{
+    padding: 10px 20px;
+}
+.col-sm-3{
+    padding: 0 20px;
+}
