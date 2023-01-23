@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="/week11js/assets/index10.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Корзина</h1>
+    <div class="cards">
+
+        <div class="card  product--1">
+            <div class="product__image"><img class="image" src="https://avatars.mds.yandex.net/get-mpic/1859063/img_id3677839872323053959.png/orig" alt="Йогурт Danone клубничный 2,9%"></div>
+            <div class="card__item item">
+             <p class="item__title">Йогурт Danone клубничный 2,9%</p>
+                <p class="item__description">Состав: обезжиренное молоко, сливки, сухое обезжиренное молоко, сахар, фруктовый наполнитель сахарный сироп; пюре и сок клубники концентрированные; загуститель – модифицированный крахмал Е1422, красители – антоцианы, каротины; ароматизатор – натуральный; регуляторы кислотности – лимонная кислота, йогуртовая закваска.</p>
+                <p class="item__weight">Масса нетто: 110 грамм</p>
+                <p class="item__quantity">Количество: 1</p>
+            </div>
+            <div class="product__price"><span class="sum1">70</span>руб.</div>
+        </div>
+
+        <div class="card  product--2">
+            <div class="product__image"><img class="image" src="https://avatars.mds.yandex.net/get-mpic/1453843/img_id6130064636674013151.jpeg/orig" alt="Даниссимо йогурт Фантазия с хрустящими шариками в шоколаде, 6.9%"></div>
+            <div class="card__item item">
+                <p class="item__title">Даниссимо йогурт Фантазия с хрустящими шариками в шоколаде, 6.9%</p>
+                <p class="item__description">Сведения о составе: Нормализованное молоко, восстановленное молоко из сухого молока, сахар, йогуртная закваска. Сахар, какао масло, рисовая мука, сухое цельное молоко, карамельный порошок</p>
+                <p class="item__weight">Масса нетто: 110 грамм</p>
+                <p class="item__quantity">Количество: 1</p>
+            </div>
+            <div class="product__price"><span class="sum2">120</span>руб.</div>
+        </div>
+
+        <div class="card  product--3">
+            <div class="product__image"><img class="image" src="https://avatars.mds.yandex.net/get-mpic/4465918/img_id6269236892380370118.jpeg/orig" alt="Продукт творожный Danone малина 3.6%"></div>
+            <div class="card__item item">
+                <p class="item__title">Продукт творожный Danone малина 3.6%</p>
+                <p class="item__description">Сведения о составе: творог обезжиренный, нормализованные сливки, наполнитель (вода, сахарный сироп, сахар, малина, крахмал кукурузный, сок черной моркови концентрированный, ароматизатор натуральный, стабилизатор – пектины, сок лимона концентрированный), сахар</p>
+                <p class="item__weight">Масса нетто: 110 грамм</p>
+                <p class="item__quantity">Количество: 1</p>
+            </div>
+            <div class="product__price"><span class="sum3">70</span>руб.</div>
+        </div>
+
+        <div class="card  product--4">
+            <div class="product__image"><img class="image" src="https://avatars.mds.yandex.net/get-mpic/4343092/img_id5251991091469679202.jpeg/orig "alt="Продукт творожный Danone Ананас Банан 3,6%"></div>
+            <div class="card__item item">
+                <p class="item__title">Продукт творожный Danone Ананас Банан 3,6% </p>
+                <p class="item__description">Сведения о составе: творог обезжиренный, нормализованные сливки, наполнитель (вода, сахар, кукурузный крахмал, ананас, пюре банана,натуральные ароматизаторы, концентрированный сок лимона, краситель - каротины), сахар.</p>
+                <p class="item__weight">Масса нетто: 110 грамм</p>
+                <p class="item__quantity">Количество: 1</p>
+            </div>
+            <div class="product__price"><span class="sum4">70</span>руб.</div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="button">
+            <button onclick='makeDiscount()' class="discountButton">Использовать купон на 20%</button>
+        </div>
+
+        <div class="total-price">
+            <p class="total-price__text">Итого:</p>
+            <span class=" result"></span>
+        </div>
+</body>
+<script src="/week11js/assets/index10.js">    
+</script>
+</html>

@@ -1,0 +1,63 @@
+1.Какие бывают варианты объявления переменных?
+let 
+const
+var
+
+2.Как можно вывести сообщение "Hello World" с помощью JavaScript?
+console.log('Hello World');
+
+3.Что выведет этот скрипт?
+let name = "Ilya"
+alert(`hello ${1}`);  hello 1
+alert(`hello ${"name"}`); hello name
+alert(`hello ${name}`); hello Ilya
+
+4.ответ 7
+
+5.Какими тремя способами можно подключить JavaScript код?
+<script src="путь_к_файлу_скрипта/script.js"></script>
+внутри тегов <script></script>
+<div> onClick="alert(`hello`)"> text </div>
+
+6.Есть ли какая-то разница между записями typeof str и typeof(str)?
+он работает со скобками или без скобок. Результат одинаковый.
+
+7.Что вернет код? 
+function showX(x)
+{ 
+	return x;
+}
+console.log(showX(28));
+
+ответ 28
+
+8.Какой результат будет у выражений ниже?
+               ответ
+"" + 1 + 0       10
+"" - 1 + 0      -1
+true + false    1
+6 / "3"         2
+"2" * "3"       6
+4 + 5 + "px"    45px
+"$" + 4 + 5     $45
+"4" - 2         2
+"4px" - 2       NaN
+7 / 0           Infinity
+"  -9  " + 5    "  -9  5"
+"  -9  " - 5   -14
+null + 1        1
+undefined + 1   NaN
+" \t \n" - 2    -2
+
+9.x = 5; 
+x = 2;
+console.log(x);
+
+ответ 2
+
+10.x = 5; 
+x -= 2;
+console.log(x);
+ ответ 3
+
+
