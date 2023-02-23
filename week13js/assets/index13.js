@@ -5,7 +5,6 @@ const commentText=document.querySelector('#textInput');
 const button=document.querySelector('#comment-add');
 const commentChat=document.querySelector('.chat__comment');
 const answerYes=document.querySelector('.answer--1');
-//const date=document.querySelector('.comment__date');
 
 const avatarCollection=[  
 'assets/images/img1.jpg',
@@ -17,7 +16,7 @@ const avatarCollection=[
 
 function randomAvatar(){
     let random = Math.floor(Math.random() * avatarCollection.length);
-    return avatarCollection(random);
+    return avatarCollection[random];
 };
 
 const craeteComment = () => {
