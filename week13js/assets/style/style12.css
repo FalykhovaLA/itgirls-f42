@@ -1,0 +1,29 @@
+
+.hidden{
+    display: none;
+}
+
+.chat__comment{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20px 20px;
+    row-gap: 4%;
+}
+
+.message_avatar{
+grid-column: 1/2;
+grid-row: 1/2;
+}
+.message_name{
+grid-column: 1/2;
+grid-row: 2/3;
+align-self: center;
+}
+.message_text{
+grid-column: 1/2;
+grid-row: 3/4;
+}
+.message_avatar{
+    width: 50%;
+    height: 50%;
+}

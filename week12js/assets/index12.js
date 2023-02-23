@@ -40,13 +40,13 @@ const craeteComment = () => {
 
     const checkName= (name)=>{
         let userName = name;
-        userName=userName.trim().split('');
+        userName=userName.trim().split(' ');
         let formattedName=[];
         userName.forEach((element)=> {
             newName = element[0].toUpperCase() + element.slice(1).toLowerCase();
             formattedName.push(newName); 
         });
-        let superName=formattedName.join('');
+        let superName=formattedName.join(' ');
         return superName;
     };
 
