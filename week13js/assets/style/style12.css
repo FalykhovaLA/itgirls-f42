@@ -1,9 +1,11 @@
-
-.hidden{
+body{
+    background-color: aquamarine;
+}
+/*.hidden{
     display: none;
 }
 
-.chat__comment{
+/*.chat__comment{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 20px 20px;
@@ -22,7 +24,8 @@ align-self: center;
 .message_text{
 grid-column: 1/2;
 grid-row: 3/4;
-}
+}*/
+
 .message_avatar{
     width: 50%;
     height: 50%;

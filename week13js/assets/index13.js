@@ -22,7 +22,7 @@ function randomAvatar(){
 const craeteComment = () => {
     let message= document.createElement('div');
     message.className='message';
-    commentChat.append(message);
+    //commentChat.append(message);
 
     let messageAvatar=document.createElement('img');
     messageAvatar.classList='message_avatar';
@@ -31,12 +31,12 @@ const craeteComment = () => {
     else{
         messageAvatar.src = randomAvatar();
     }
-    commentChat.prepend (messageAvatar);
+    //commentChat.prepend (messageAvatar);
 
     let messageName=document.createElement('div');
     messageName.classList='message_name';
     messageName.textContent= checkName(commentName.value);
-    commentChat.prepend(messageName);
+    //commentChat.prepend(messageName);
     if (answerYes.checked===true) {
         } else {
             messageName.textContent="username";
@@ -45,12 +45,13 @@ const craeteComment = () => {
     let messageText =document.createElement('div');
     messageText.classList='message_text';
     messageText.textContent= checkSpam (commentText.value);
-    commentChat.prepend(messageText);
+    //commentChat.prepend(messageText);
 
     let messageTime = document.createElement('div');
     messageTime.className ='message_time';
     messageTime.textContent = new Date();
-    commentChat.prepend(messageTime);
+    message.innerHTML = messageAvatar.outerHTML + messageName.outerHTML + messageText.outerHTML + messageTime.outerHTML;
+    commentChat.prepend(message);
     
 };
     const clearField =() =>{
