@@ -1,0 +1,62 @@
+
+body {
+    padding: 10px;
+    background-image:url(/week14js/assets/kinematograf-kartinki-35.jpg);
+    
+}
+
+h1 {
+    font-style: Garamond;
+    padding-left: 25%;
+    padding-right: 22%;
+    padding-bottom: 40px;
+    font-size: 50px;
+    border-bottom: 1px solid white;
+    color: rgb(5, 5, 0);
+}
+
+.name {
+    font-style: Garamond;
+}
+
+.producer-info__career {
+    font-style: Garamond;
+    color: beige;
+    font-size: 15px;
+}
+
+.producer-info {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    justify-content: space-between;
+}
+
+h3 {
+    font-style: Garamond;
+    font-size: 35px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.producer-info__films {
+    color: rgb(19, 18, 18);
+    order: 2;
+    font-size: larger;
+}
+
+.movies-best {
+    display: grid;
+    padding-bottom: 10px;
+}
+
+.movies-best__list {
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-size: larger;
+}
+
+.producer {
+    display: grid;
+    border-bottom: 1px solid white;
+}
