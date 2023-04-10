@@ -45,8 +45,7 @@ const array =[
         top_rated_film: 'Далласский клуб покупателей'
         },
     ];
-        
-    //console.log(producers);
+    
         const bestFilms = array.map(item => {
         return item.top_rated_film;
 
@@ -81,3 +80,5 @@ const array =[
 
 
     moviesBest.textContent = bestFilms.join(', ');
+
+    

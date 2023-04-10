@@ -1,0 +1,131 @@
+.page {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url('../styles/images/2.jpg');
+    background-size: cover;
+}
+
+.image{
+    width: 22%;
+    padding-bottom: 4%;
+}
+
+.wrapper{
+    margin: 5% 20% 10% 20%;
+    padding: 2% 5% 10% 5%;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    border: 1px dotted #e0237b;
+
+}
+.task-list{
+    border-top: 1px dashed #e00f82;
+}
+
+.input__heading, .task-list__heading {
+    font-size: 2vw;
+    color: rgb(128, 6, 42);
+}
+
+.input{
+    padding-bottom: 10%;
+}
+.text{
+    font-size: 1.3vw;
+    padding: 1.4%;
+    border: 3px solid rgba(127, 8, 196, 0.2);
+    border-radius: 0.5vw;
+    flex-grow: 0.9;
+    color: #c90868;
+}
+
+.button-add, .button-clean{
+    font-size: 1.4vw;
+    padding: 0.9% 3% 0.9% 3%;
+    border: 1px solid rgba(255, 15, 203, 0.2);
+    border-radius: 0.5vw;
+    background-color: rgb(209, 6, 131);
+    color: azure;
+    cursor: pointer;
+}
+.button-clean{
+    color: rgb(253, 253, 253);
+}
+.input__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.task-list__button{
+    float: right;
+}
+
+.container__checkbox{
+margin-right: 3%;
+width: 1em;
+height: 1em;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+    font-size: 1.25vw;
+    color: #d31252;
+}
+
+.container input {
+position: relative;
+}
+
+.container input::before{
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.5em;
+    background-color: white;
+    border: 1px solid rgb(226, 15, 145);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.3 all ease;
+}
+
+.container input:checked::before {
+background-color: rgb(219, 8, 43);
+border: 1px solid rgb(226, 11, 75);
+}
+.container input:checked::after{
+    position: absolute;
+    content:'\2713';
+    color: white;
+    bottom: 0.4%;
+    right: 10%;
+}
+
+
+.container:last-child{
+padding-bottom: 4.5vw;
+}
+
+.emptyNotExist{
+    display: none;
+}
+
+.emptyContainer{
+    font-size: 1.5vw;
+    color: #e00434;
+}
