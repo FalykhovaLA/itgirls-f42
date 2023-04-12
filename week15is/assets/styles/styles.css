@@ -17,12 +17,9 @@
     padding: 2% 5% 10% 5%;
     max-width: 100%;
     font-family: 'Open Sans', sans-serif;
-    background-color: white;
+    background-color: #f7f5f5;
     border: 1px dotted #e0237b;
 
-}
-.task-list{
-    border-top: 1px dashed #e00f82;
 }
 
 .input__heading, .task-list__heading {

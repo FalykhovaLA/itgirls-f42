@@ -6,6 +6,18 @@ const emptyContainer=document.querySelector('.emptyContainer');
 
 let toDoList=[];
 
+function addTask(){
+    let displayTask='';
+    toDoList.forEach (function(item, i) {
+    displayTask+=`
+    <div class='content__container container'>
+        <span class='container__content' for='item_${i}'>${item.todo}</span>
+        <input class='container__checkbox' id='item_${i}' type='checkbox' ${item.checked ?  'checked' : ''}  >
+    </div>`;
+    
+    taskContent.innerHTML = displayTask;
+    });  
+}
 cleanButton.disabled=true;
 cleanButton.style.cursor='not-allowed';
 
@@ -29,18 +41,7 @@ function createTask(str) {
     toDoList.push(task);
 }
 
-function addTask(){
-    let displayTask='';
-    toDoList.forEach (function(item, i) {
-    displayTask+=`
-    <div class='content__container container'>
-        <label class='container__content' for='item_${i}'>${item.todo}</label>
-        <input class='container__checkbox' id='item_${i}' type='checkbox' ${item.checked ?  'checked' : ''}  >
-    </div>`;
-    
-    taskContent.innerHTML = displayTask;
-    });  
-}
+
 
 cleanButton.onclick = () => {
     taskContent.innerHTML="";
