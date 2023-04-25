@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style16.css">
+    <title>Калькулятор стоимости авто</title>
+</head>
+<body>
+    <style>
+        .invisible{
+            display: none;
+
+        }
+        .visible{
+            display: block;
+
+        }
+    </style>
+    <main class="wrapper">
+        <form name="form">
+        <label for="brand">Марка автомобиля</label>
+            <select id="brand" onchange ="onBrandChange()">
+                <option value="default" disabled selected>выберите марку автомобиля</option>
+                <option value="2">Reno</option>
+                <option value="3">Opel</option>
+                <option value="4">BMV</option>
+            </select>
+            <br/>
+                <div id="modelDiv" class="invisible">
+                    <label for="model">Модель автомобиля</label>
+                    <select id="model" onchange = "onModelChange()"></select>
+                </div>
+    
+                <br/>
+                
+                <label for="fuel">Тип двигателя</label>
+                <div id="fuel">
+                    <input type="radio" name="fuel" value="12"> Газ </input>
+                    <input type="radio" name="fuel" value="32" >Бензин </input>
+                    <input type="radio" name="fuel" value="56"> Дизель</input>
+                    </div>  
+                    <br/>
+
+                    <label for="V">Объем двигателя</label>
+                    <input id="V" type="number" value="1.1"></input>
+                    <br/>
+
+                    <label for="newOld">Новый /поддержанный</label>
+                    <input id="new" type="radio" name="newOld" value="1"onclick="onNewClick()"> новый </input>
+                    <input id="old" type="radio" name="newOld" value="2" onclick="onOldClick()">Поддержанный</input>
+                    <br/>
+                    <div id="stateDiv" class="invisible">
+                        <label for="state">Сколько владельцев?</label>
+                        <div id="state">
+                            <input type="radio" name="state" value="2"> 1-2 </input>
+                            <input type="radio" name="state" value="3" >3-4</input>
+                            </div>  
+                        </div>
+                    
+                        <br/>
+            <button class="button" onclick="onSummCount()">Рассчитать</button>
+        </form>
+    </main>
+    <script src= "./assets/index16.js"></script>
+</body>
+</html>
