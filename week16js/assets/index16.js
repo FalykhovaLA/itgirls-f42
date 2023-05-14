@@ -14,10 +14,10 @@ const OpelModels=[
 
 const brand = document.getElementById('brand');
 const modelSelect = document.getElementById('model');
-let summPrice= 0
+let summPrice = 0;
 
 const renderModel=(array) => {
-    let modelHTML = ''
+    let modelHTML = '<option value="default" disabled selected>выберите модель автомобиля</option>'
     array.forEach((model) => {
         modelHTML+=`<option value = "${model.price}"> ${model.name}</option>`
     
@@ -60,10 +60,25 @@ const onNewClick= () =>{
     document.getElementById('stateDiv').className="invisible"
 }
 
-const onModelChage=()=>{
+const onModelChange=()=>{
     const model = document.getElementById('model');
+    const indexChosenModel = model.selectedIndex;
+    const modelPrice = model.options[indexChosenModel].value;
+    summPrice += Number[modelPrice];
 }
 
 const onSummCount =()=>{
     const brandPrice=Number(brand.value);
+
 }
+
+const onFuelChose =()=>{
+    const fuels= Array.from(document.getElementById('fuel').children);
+    const chosenFuel= fuels.filter((fuel)=>{
+        return fuel.checked === true
+    })
+    summPrice += Number(chosenFuel[0].value)
+}
+
+
+
